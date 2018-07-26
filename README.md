@@ -1,4 +1,4 @@
-# Collection of Tanium [Sensors](#sensors) & [Packages](#packages)
+# Collection of Custom Tanium [Sensors](#sensors) & [Packages](#packages)
 
 # Sensors
 **[Cylance_Client_Version.ps1](https://github.com/PoppaShell/Tanium/blob/master/Sensors/Cylance_Client_Version.ps1)**\
