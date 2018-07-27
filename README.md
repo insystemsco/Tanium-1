@@ -1,5 +1,5 @@
 # Collection of Custom Tanium [Sensors](#sensors) & [Packages](#packages)
-**IMPORTANT - This is Unofficial Tanium Content. Please test all Sensors & Packages in a Lab/Dev Environment before using them in Production. These have not been tested or approved from anyone at Tanium and I am not liable for anything your may break using them.**
+**IMPORTANT - This is Unofficial Tanium Content. Please test all Sensors & Packages in a Lab/Dev Environment before using them in Production. These have not been tested or approved by anyone at Tanium and I am not liable for anything you may break using them.**
 
 # Sensors
 **[Cylance_Client_Version.ps1](https://github.com/PoppaShell/Tanium/blob/master/Sensors/Cylance_Client_Version.ps1)**\
