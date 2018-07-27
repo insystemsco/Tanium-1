@@ -1,7 +1,7 @@
 # Collection of Custom Tanium [Sensors](#sensors) & [Packages](#packages)
 **IMPORTANT - This is Unofficial Tanium Content. Please test all Sensors & Packages in a Lab/Dev Environment before using them in Production. These have not been tested or approved by anyone at Tanium and I am not liable for anything you may break using them.**
 
-# Sensors
+# [Sensors](https://github.com/PoppaShell/Tanium/tree/master/Sensors)
 **[Cylance_Client_Version.ps1](https://github.com/PoppaShell/Tanium/blob/master/Sensors/Cylance_Client_Version.ps1)**\
 Pulls the Client Version from the Status.json file located in %ProgramData%\Cylance\".
 
@@ -33,7 +33,7 @@ Displays the Local Admin Data that was created from running the [Collect_Local_A
 Displays the MD5 Hash of the Tanium Index Configuration file. This is used to make sure your endpoints have the expected latest configuration you have pushed out. If it doesn't, you can assign an action to update the configuration. There is also a native Tanium Sensor that can be used to display the Conf File Version, if you have used the proper Version syntax in the Conf File. This was either not available or I didn't know about it when I wrote this Sensor. But in my opinion, hashing the Conf File is also a great way to do it.
 
 
-# Packages
+# [Packages](https://github.com/PoppaShell/Tanium/tree/master/Packages)
 **[Push_Cylance_Token.ps1](https://github.com/PoppaShell/Tanium/blob/master/Packages/Push_Cylance_Token.ps1)**\
 Used to push the Cylance InstallToken to the registry for any 32-bit or 64-bit Windows system. **You MUST update the $RegKeyData Variable with your Company's Install Token for this Package to work.** For the Cylance Client to be able to ingest the "InstallToken" Key, the CylanceSvc Service must be running. If the Service is running, it will ingest the "InstallToken" Key and you will then see it disappear and the "LastStateRestorePoint" Key will then be present. If that doesn't happen after a short period of time, you may have a firewall issue where the Client can't communicate to the Cloud Console or a corrupt install and it needs to be reinstalled. You can use the [Cylance_Token_Exsists.ps1](https://github.com/PoppaShell/Tanium/blob/master/Sensors/Cylance_Token_Exsists.ps1) Sensor to discover Systems that have lost or never recieved their InstallToken.
 
